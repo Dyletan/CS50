@@ -1,0 +1,54 @@
+div
+{
+    visibility: hidden;
+}
+
+body {
+    background-image: url(images/back.jpg);
+}
+
+h5{
+    padding-top: 17px;
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+    padding: 7px;
+
+}
+
+img{
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+audio{
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+select{
+    margin-left: 25px;
+}
+
+button{
+    margin-left: 10px;
+}
+
+aside{
+    margin-left: 28px;
+}
+
+span{
+    color: red;
+    font-style: italic;
+}
+

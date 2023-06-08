@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Харза</title>
+    </head>
+    <body>
+        <script src="code.js"></script>
+        <div class="alert alert-danger" role="alert" id="alert">
+            Неправильный ответ, все они милые
+        </div>
+        <h1>
+            Ну же, смелее, делай свой выбор
+        </h1>
+        <img src="images/harza.jpg" alt="<3">
+        <h5>
+            Сорян звуков харзы не нашел, вот реквием моему перфекционизму
+        </h5>
+        <audio controls preload="auto">
+        <source src="audio/requiem.mp3" type="audio/mpeg">
+        </audio>
+        <p>
+            Ну и как тебе она, понравилась, разве она не <span>милая</span>? Если да то можешь  проголосовать за нее.
+        </p>
+        <p>
+            Ну вот ты и подошел к концу. Можешь снова на всех посмотреть вернувшись
+            <a href="beluha.html">вначало</a>.
+        </p>
+        <select id="list">
+            <option>Белочка</option>
+            <option>Белуха</option>
+            <option>Выдра</option>
+            <option>Свинка</option>
+            <option selected>Харза</option>
+        </select>
+        <aside>
+            Не забудь поставить мне 5 звезд :Р
+            Да ладно, не парься, я не сделал такой функции
+        </aside>
+        <aside>
+            Если хочешь доп инфу по этому животному, то нажми на кнопку правее
+            <button id="button" type="button" class="btn btn-outline-info waves-effect">Инфа</button>
+            <script>
+                document.getElementById("button").onclick = function () {
+                    location.href = "https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D1%80%D0%B7%D0%B0";
+                };
+            </script>
+        </aside>
+        <aside>
+            Вот бытрый доступ ко  всему списку жисотных, принимающих участие в викторине:
+        </aside>
+        <menu>
+            <li>
+            <a href="svinka.html">Свинка</a>
+            </li>
+            <li>
+            <a href="beluha.html">Белуха</a>
+            </li>
+            <li>
+                <a href="harza.html">Харза</a>
+            </li>
+            <li>
+                <a href="vidra.html">Выдра</a>
+            </li>
+            <li>
+                <a href="belka.html">Белка</a>
+            </li>
+        </menu>
+    </body>
+</html>

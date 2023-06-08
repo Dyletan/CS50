@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Свинка</title>
+    </head>
+    <body>
+        <script src="code.js"></script>
+        <div class="alert alert-danger" role="alert" id="alert">
+            Неправильный ответ, все они милые
+        </div>
+        <h1>
+            Ну вот и следующий экспонат!
+        </h1>
+        <img src="images/svinka.jpeg" alt="<3">
+
+        <h5>
+            Вот, надеюсь тебе понравятся звуки свинки
+        </h5>
+        <audio controls preload="auto">
+        <source src="audio/поросенок.mp3" type="audio/mpeg">
+        </audio>
+        <p>
+            Ну и как тебе она, понравилась, разве она не <span>милая</span>? Если да то можешь  проголосовать за нее. НО ПОСТОЙ! Сначала посмтори на
+            <a href="vidra.html">выдрочку</a>.
+        </p>
+        <p>
+            Если что, голос тута
+        </p>
+        <select id="list">
+            <option>Белочка</option>
+            <option>Белуха</option>
+            <option>Выдра</option>
+            <option selected>Свинка</option>
+            <option>Харза</option>
+        </select>
+        <aside>
+            Если хочешь доп инфу по этому животному, то нажми на кнопку правее
+            <button id="button" type="button" class="btn btn-outline-info waves-effect">Инфа</button>
+            <script>
+                document.getElementById("button").onclick = function () {
+                    location.href = "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F_%D1%81%D0%B2%D0%B8%D0%BD%D1%8C%D1%8F#:~:text=%D0%9A%D0%B0%D1%80%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%81%D0%B2%D0%B8%D0%BD%D1%8C%D1%8F%20(%D0%BB%D0%B0%D1%82.,)%3B%20%D1%81%D0%B0%D0%BC%D1%8B%D0%B9%20%D0%BC%D0%B5%D0%BB%D0%BA%D0%B8%D0%B9%20%D0%B2%D0%B8%D0%B4%20%D1%81%D0%B2%D0%B8%D0%BD%D0%B5%D0%B9.";
+                };
+            </script>
+        </aside>
+        <aside>
+            Вот бытрый доступ ко  всему списку жисотных, принимающих участие в викторине:
+        </aside>
+        <menu>
+        <li>
+        <a href="svinka.html">Свинка</a>
+        </li>
+        <li>
+        <a href="beluha.html">Белуха</a>
+        </li>
+        <li>
+            <a href="harza.html">Харза</a>
+        </li>
+        <li>
+            <a href="vidra.html">Выдра</a>
+        </li>
+        <li>
+            <a href="belka.html">Белка</a>
+        </li>
+        <script src="code.js"></script>
+        </menu>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Белуха</title>
+    </head>
+    <body>
+        <script src="code.js"></script>
+        <div class="alert alert-danger" role="alert" id="alert">
+            Неправильный ответ, все они милые
+        </div>
+        <h1>
+            Ебаа, у нас выставка самых милых животных
+        </h1>
+        <img src="images/beluha.jpg" alt="<3">
+        <h5>
+            Вот, надеюсь тебе понравятся звуки белухи
+        </h5>
+        <audio controls preload="auto">
+        <source src="audio/белуха.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>
+            Ну и как тебе она, понравилась, разве она не <span>милая</span>? Если да то можешь  проголосовать за нее. НО ПОСТОЙ! Сначала посмтори на
+            <a href="svinka.html">других</a>.
+        </p>
+        <select id="list">
+            <option>Белочка</option>
+            <option selected>Белуха</option>
+            <option>Выдра</option>
+            <option>Свинка</option>
+            <option>Харза</option>
+        </select>
+        <aside>
+            Если хочешь доп инфу по этому животному, то нажми на кнопку правее
+            <button id="button" type="button" class="btn btn-outline-info waves-effect">Инфа</button>
+            <script>
+                document.getElementById("button").onclick = function () {
+                    location.href = "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D1%83%D1%85%D0%B0_(%D0%BC%D0%BB%D0%B5%D0%BA%D0%BE%D0%BF%D0%B8%D1%82%D0%B0%D1%8E%D1%89%D0%B5%D0%B5)";
+                };
+                alert("Oh, hi Mark");
+            </script>
+        </aside>
+        <aside>
+            Вот бытрый доступ ко  всему списку жисотных, принимающих участие в викторине:
+        </aside>
+        <menu>
+            <li>
+            <a href="svinka.html">Свинка</a>
+            </li>
+            <li>
+            <a href="beluha.html">Белуха</a>
+            </li>
+            <li>
+                <a href="harza.html">Харза</a>
+            </li>
+            <li>
+                <a href="vidra.html">Выдра</a>
+            </li>
+            <li>
+                <a href="belka.html">Белка</a>
+            </li>
+        </menu>
+    </body>
+</html>

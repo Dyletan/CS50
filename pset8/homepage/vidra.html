@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Выдра</title>
+    </head>
+    <body>
+        <div class="alert alert-danger" role="alert" id="alert">
+            Неправильный ответ, все они милые
+        </div>
+        <script src="code.js"></script>
+        <h1>
+            Выставка продолжается
+        </h1>
+        <img src="images/vidra.jpg" alt="vidra<3">
+        <h5>
+            Вот, надеюсь тебе понравятся звуки выдры
+        </h5>
+        <audio controls preload="auto">
+        <source src="audio/vydra-golos-1.mp3" type="audio/mpeg">
+        </audio>
+        <p>
+            Ну и как тебе она, понравилась, разве она не <span>милая</span>? Если да то можешь  проголосовать за нее. НО ПОСТОЙ! Сначала посмтори на
+            <a href="belka.html">белку</a>.
+        </p>
+        <select id="list">
+            <option>Белочка</option>
+            <option>Белуха</option>
+            <option selected>Выдра</option>
+            <option>Свинка</option>
+            <option>Харза</option>
+        </select>
+        <aside>
+            Если хочешь доп инфу по этому животному, то нажми на кнопку правее
+            <button id="button" type="button" class="btn btn-outline-info waves-effect">Инфа</button>
+            <script>
+                document.getElementById("button").onclick = function () {
+                    location.href = "https://ru.wikipedia.org/wiki/%D0%92%D1%8B%D0%B4%D1%80%D0%B0";
+                };
+            </script>
+        </aside>
+        <aside>
+        Вот бытрый доступ ко  всему списку жисотных, принимающих участие в викторине:
+        </aside>
+        <menu>
+            <li>
+            <a href="svinka.html">Свинка</a>
+            </li>
+            <li>
+            <a href="beluha.html">Белуха</a>
+            </li>
+            <li>
+                <a href="harza.html">Харза</a>
+            </li>
+            <li>
+                <a href="vidra.html">Выдра</a>
+            </li>
+            <li>
+                <a href="belka.html">Белка</a>
+            </li>
+        </menu>
+    </body>
+</html>

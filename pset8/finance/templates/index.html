@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        {% if not stocks %}
+            <h4 style="margin-left:292px;margin-bottom: 20px">You have no shares. Go <a href="{{ url_for('buy') }}">buy</a> some!</h4>
+        {% endif %}
+        {% if stocks %}
+        <style>
+            table{
+                margin-left: 200px;
+                margin-bottom: 20px;
+            }
+        </style>
+        <table class="table table-hover" id="category">
+            <tr>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Profit</th>
+            </tr>
+
+            {% for stock in stocks %}
+            <tr>
+                <td>{{ stock.symbol }}</td>
+                <td>{{ stock.company }}</td>
+                <td>{{ stock.shares }}</td>
+                <td>{{ stock.cur_price }}</td>
+                <td>{{ stock.cur_total }}</td>
+                <td>{{ stock.profit }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="sum1"></td>
+                <td id="sum2"></td>
+            </tr>
+        </table>
+        {% endif %}
+        <blockquote class="text-left">
+            <h5>Available cash: <mark>{{ cash }}</mark></h4>
+            <h5>Portfolio value: <mark>{{ grand_total }}</mark></h4>
+        </blockquote>
+        <script>
+            let sum1 = 0;
+            let sum2 = 0;
+            $("#category tr").not(':first').not(':last').each(function() {
+              sum1 +=  getnum($(this).find("td:eq(4)").text());
+              sum2 +=  getnum($(this).find("td:eq(5)").text());
+              function getnum(t){
+              	if(isNumeric(t)){
+                	return Math.round(parseFloat(t,10));
+                }
+                return 0;
+            	 	function isNumeric(n) {
+              		return !isNaN(parseFloat(n)) && isFinite(n);
+            		}
+              }
+            });
+            $("#sum1").text(sum1);
+            $("#sum2").text(sum2);
+        </script>
+{% endblock %}
